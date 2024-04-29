@@ -9,7 +9,7 @@
 <body>
     
     <div class="kotak_login">
-    <form action="Welcome.html" method="get">
+    <form action="Welcome.php" method="get">
     <h1>Buat Account Baru</h1>
     <div id="title">
     <h2>Sign Up Form</h2>
@@ -17,14 +17,14 @@
     </div><br>
 
     <label for="fname">First name :</label><br>
-    <input type="text" id="fname" placeholder="input your first name" maxlength="15" pattern="[A-Za-z ]+" class="form_input" required><br>
+    <input type="text" id="fname" name="fname" placeholder="input your first name" maxlength="15" pattern="[A-Za-z ]+" class="form_input" required><br>
     <label for="lname">Last name :</label><br>
-    <input type="text" id="lname" placeholder="input your last name" maxLength="20" pattern="[A-Za-z ]+" class="form_input" required><br><br>
+    <input type="text" id="lname" name="lname" placeholder="input your last name" maxLength="20" pattern="[A-Za-z ]+" class="form_input" required><br><br>
 
     <label for="">Gender</label><br><br>
-    <input type="radio" name="gender" id="male" class="radio" required>
+    <input type="radio" name="gender" id="male" class="radio" value="male" required>
     <label for="male">Male</label><br>
-    <input type="radio" name="gender" id="female" class="radio">
+    <input type="radio" name="gender" id="female" value="female" class="radio">
     <label for="female">Female</label><br><br>
         
     <label for="national">Nationality</label><br>
@@ -34,13 +34,15 @@
         <option value="japan">Japanese</option>
     </select><p>
 
-    <label for="">Language Spoken</label><br><p></p>
-    <input type="checkbox" id="indonesia" required>
+    <form method="get">
+    <label for="checkbox">Language Spoken</label><br><p></p>
+    <input type="checkbox" id="indonesia" name="bahasa[]" value="indonesia" required>
     <label for="indonesia">Bahasa Indonesia</label><br>
-    <input type="checkbox" id="english">
+    <input type="checkbox" id="english" name="bahasa[]" value="english">
     <label for="english">English</label><br>
-    <input type="checkbox" id="japanese">
+    <input type="checkbox" id="japanese" name="bahasa[]" value="japanese">
     <label for="japanese">Japanese</label><br><br>
+</form>
 
         <label for="bio">Bio</label><br><br>
         <textarea name="Bio" rows="10" cols="30" id="bio" maxlength="100" placeholder="Input your Bio in Here"></textarea>

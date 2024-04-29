@@ -86,7 +86,7 @@
    
     <ol>
         <li>Mengunjungi Web ini</li>
-        <li>Mendaftarkan di <a href="Form.html">Form Sin Up</a></li>
+        <li>Mendaftarkan di <a href="Form.php">Form Sin Up</a></li>
         <li>Selesai</li>
     </ol>
 </div>
